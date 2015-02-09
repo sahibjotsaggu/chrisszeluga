@@ -55,7 +55,7 @@ h2 {
   font-family: "Raleway", "Open Sans", sans-serif;
   font-size: 2em;
   text-transform: uppercase;
-  margin-bottom: 22px; }
+  margin-bottom: 26px; }
 
 h3 {
   font-family: "Raleway", "Open Sans", sans-serif;
@@ -110,7 +110,7 @@ a {
 /* Sections */
 section {
   padding-bottom: 40px; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     section {
       padding-bottom: 100px; } }
 
@@ -118,7 +118,7 @@ section {
   font-size: 1.4em; }
 
 .technologies {
-  text-align: right; }
+  text-align: left; }
   @media (min-width: 768px) {
     .technologies {
       clear: both;
@@ -126,7 +126,6 @@ section {
   @media (min-width: 992px) {
     .technologies {
       clear: none;
-      text-align: left;
       padding-top: 0; } }
 
 #portfolio h2 {
