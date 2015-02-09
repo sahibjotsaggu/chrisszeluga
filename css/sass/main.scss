@@ -34,7 +34,7 @@ h2 {
     font-size: 2em;
     text-transform: uppercase;
     margin: {
-        bottom: 22px;
+        bottom: 26px;
     }
 }
 h3 {
@@ -110,7 +110,7 @@ section {
     padding: {
         bottom: 40px;
     }
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
         padding: {
             bottom: 100px;
         }
@@ -120,7 +120,7 @@ section {
     font-size: 1.4em;
 }
 .technologies {
-    text-align: right;
+    text-align: left;
     @include breakpoint(sm) {
         clear: both;
         padding: {
@@ -129,7 +129,6 @@ section {
     }
     @include breakpoint(md) {
         clear: none;
-        text-align: left;
         padding: {
             top: 0
         }
