@@ -121,10 +121,12 @@ section {
   text-align: left; }
   @media (min-width: 768px) {
     .technologies {
+      text-align: center;
       clear: both;
       padding-top: 20px; } }
   @media (min-width: 992px) {
     .technologies {
+      text-align: left;
       clear: none;
       padding-top: 0; } }
 
