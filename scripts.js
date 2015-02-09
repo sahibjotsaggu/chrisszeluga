@@ -6,6 +6,7 @@ $(document).ready(function() {
             url: "https://getsimpleform.com/messages/ajax?form_api_token=32269d83d5276c352765af573f447344",
             data: $('#contact').serialize()
         }).done(function() {
+            $('#submit').fadeOut();
             $('.success').fadeIn();
         });
         return false;
