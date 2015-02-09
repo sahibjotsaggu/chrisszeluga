@@ -84,7 +84,7 @@ a {
   @media (min-width: 768px) {
     .header-image {
       height: 600px;
-      background: url("../img/header.jpg") no-repeat center center scroll; } }
+      background: url("../img/header.jpg") no-repeat center 45% scroll; } }
   .header-image .headline {
     position: absolute;
     bottom: 0;
