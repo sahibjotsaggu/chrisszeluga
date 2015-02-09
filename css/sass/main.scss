@@ -122,12 +122,14 @@ section {
 .technologies {
     text-align: left;
     @include breakpoint(sm) {
+        text-align: center;
         clear: both;
         padding: {
             top: 20px;
         }
     }
     @include breakpoint(md) {
+        text-align: left;
         clear: none;
         padding: {
             top: 0
