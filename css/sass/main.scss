@@ -65,7 +65,7 @@ a {
     background: url('../img/header.jpg') no-repeat 60% center scroll;
     @include breakpoint(sm) {
         height: 600px;
-        background: url('../img/header.jpg') no-repeat center center scroll;
+        background: url('../img/header.jpg') no-repeat center 45% scroll;
     }
     background-size: cover;
     margin: {
