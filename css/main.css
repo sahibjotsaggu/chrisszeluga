@@ -1,0 +1,193 @@
+/* Global */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600);
+@media (min-width: 1200px) {
+  .clear-lg::after {
+    clear: both;
+    content: "";
+    display: table; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .clear-md::after {
+    clear: both;
+    content: "";
+    display: table; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .clear-sm::after {
+    clear: both;
+    content: "";
+    display: table; } }
+
+@media (max-width: 768px) {
+  .clear-xs::after {
+    clear: both;
+    content: "";
+    display: table; } }
+
+/* -- Fonts -- */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/raleway-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-thin-webfont.woff2") format("woff2"), url("../fonts/raleway-thin-webfont.woff") format("woff"), url("../fonts/raleway-thin-webfont.svg#Raleway") format("svg"); }
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/raleway-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-bold-webfont.woff2") format("woff2"), url("../fonts/raleway-bold-webfont.woff") format("woff"), url("../fonts/raleway-bold-webfont.svg#Raleway") format("svg"); }
+/* -- Elements -- */
+body {
+  background: #f0f6fd;
+  font-family: 'Open Sans', sans-serif;
+  color: #31333b; }
+
+@media (max-width: 768px) {
+  [class*="col-"] {
+    margin-bottom: 30px; } }
+h1 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 22px; }
+
+h3 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 10px; }
+
+p {
+  line-height: 1.8em; }
+
+a {
+  border-bottom: 1px dotted #337ab7; }
+  a:hover, a:active, a:visited {
+    text-decoration: none; }
+
+/* Header */
+.header-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 568px;
+  background: url("../img/header.jpg") no-repeat 60% center scroll;
+  background-size: cover;
+  margin-bottom: 100px; }
+  @media (min-width: 768px) {
+    .header-image {
+      height: 600px;
+      background: url("../img/header.jpg") no-repeat center center scroll; } }
+  .header-image .headline {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 10px; }
+    @media (min-width: 768px) {
+      .header-image .headline {
+        position: inherit;
+        text-align: left;
+        padding-top: 80px;
+        padding-bottom: 0; } }
+    .header-image .headline h1 {
+      margin-bottom: 3px;
+      color: #fff; }
+    .header-image .headline h2 {
+      font-size: 1.6em;
+      margin-top: 0;
+      color: #fff; }
+      @media (min-width: 768px) {
+        .header-image .headline h2 {
+          font-size: 2em; } }
+
+/* Sections */
+section {
+  padding-bottom: 40px; }
+  @media (min-width: 768px) {
+    section {
+      padding-bottom: 100px; } }
+
+.callout {
+  font-size: 1.4em; }
+
+.technologies {
+  text-align: right; }
+  @media (min-width: 768px) {
+    .technologies {
+      clear: both;
+      padding-top: 20px; } }
+  @media (min-width: 992px) {
+    .technologies {
+      clear: none;
+      text-align: left;
+      padding-top: 0; } }
+
+#portfolio h2 {
+  text-align: center; }
+@media (max-width: 768px) {
+  #portfolio [class*="col-"] {
+    margin-bottom: 40px; } }
+#portfolio .portfolio-items {
+  position: relative; }
+  @media (min-width: 768px) {
+    #portfolio .portfolio-items [class*="col-"]:nth-child(odd) {
+      clear: both;
+      margin-bottom: 20px; } }
+  @media (min-width: 992px) {
+    #portfolio .portfolio-items [class*="col-"]:nth-child(odd) {
+      clear: none;
+      margin-bottom: 0; } }
+  #portfolio .portfolio-items .item img {
+    margin-bottom: 7px; }
+  #portfolio .portfolio-items .item p {
+    margin-bottom: 3px; }
+    #portfolio .portfolio-items .item p.used {
+      font-style: italic;
+      font-size: 90%;
+      margin-top: 7px; }
+  #portfolio .portfolio-items a {
+    color: inherit;
+    text-decoration: none; }
+
+#values {
+  text-align: center; }
+  #values .value {
+    margin-bottom: 20px; }
+    #values .value .point {
+      font-weight: 600;
+      margin-bottom: 0px; }
+
+.success {
+  text-align: center;
+  display: none; }
+
+footer {
+  background: #31333b;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 100px; }
+  footer h2 {
+    text-align: center;
+    margin-bottom: 28px; }
+  footer .form-group {
+    margin-bottom: 30px; }
+    footer .form-group input {
+      border-radius: 0;
+      outline: none;
+      border: none !important;
+      box-shadow: none !important; }
+    footer .form-group textarea {
+      border-radius: 0;
+      height: 163px;
+      outline: none;
+      border: none !important;
+      box-shadow: none !important; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+{
+  "name": "chrisszeluga",
+  "version": "1.0.0",
+  "homepage": "https://github.com/chrisszeluga/chrisszeluga",
+  "authors": [
+    "Chris Szeluga <chris.szeluga@yahoo.com>"
+  ],
+  "description": "Personal site for chrisszeluga.com",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}

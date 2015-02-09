@@ -1,0 +1,237 @@
+/* Global */
+
+@import "bourbon/bourbon";
+@import "breakpoints";
+/* -- Fonts -- */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600);
+@include font-face("Raleway", "../fonts/raleway-thin-webfont", $file-formats: eot woff2 woff svg);
+@include font-face("Raleway", "../fonts/raleway-bold-webfont", bold, $file-formats: eot woff2 woff svg);
+$primary-font: 'Open Sans', sans-serif;
+$display-font: 'Raleway', 'Open Sans', sans-serif;
+/* -- Elements -- */
+
+body {
+    background: #f0f6fd;
+    font-family: 'Open Sans', sans-serif;
+    color: #31333b;
+}
+@include breakpoint(xs) {
+    [class*="col-"] {
+        margin-bottom: 30px;
+    }
+}
+
+h1 {
+    font-family: $display-font;
+    font-weight: bold;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: $display-font;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: {
+        bottom: 22px;
+    }
+}
+h3 {
+    font-family: $display-font;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: {
+        top: 10px;
+    }
+}
+p {
+    line-height: 1.8em;
+}
+a {
+    border-bottom: 1px dotted #337ab7;
+    &:hover, &:active, &:visited {
+        text-decoration: none;
+    }
+}
+/* Header */
+
+.header-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 568px;
+    background: url('../img/header.jpg') no-repeat 60% center scroll;
+    @include breakpoint(sm) {
+        height: 600px;
+        background: url('../img/header.jpg') no-repeat center center scroll;
+    }
+    background-size: cover;
+    margin: {
+        bottom: 100px;
+    }
+    .headline {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        padding: {
+            bottom: 10px;
+        }
+        @include breakpoint(sm) {
+            position: inherit;
+            text-align: left;
+            padding: {
+                top: 80px;
+                bottom: 0;
+            }
+        }
+        h1 {
+            margin: {
+                bottom: 3px;
+            }
+            color: #fff;
+        }
+        h2 {
+            font-size: 1.6em;
+            @include breakpoint(sm) {
+                font-size: 2em;
+            }
+            margin: {
+                top: 0;
+            }
+            color: #fff;
+        }
+    }
+}
+/* Sections */
+
+section {
+    padding: {
+        bottom: 40px;
+    }
+    @include breakpoint(sm) {
+        padding: {
+            bottom: 100px;
+        }
+    }
+}
+.callout {
+    font-size: 1.4em;
+}
+.technologies {
+    text-align: right;
+    @include breakpoint(sm) {
+        clear: both;
+        padding: {
+            top: 20px;
+        }
+    }
+    @include breakpoint(md) {
+        clear: none;
+        text-align: left;
+        padding: {
+            top: 0
+        }
+    }
+}
+#portfolio {
+    h2 {
+        text-align: center;
+    }
+    @include breakpoint(xs) {
+        [class*="col-"] {
+            margin: {
+                bottom: 40px;
+            }
+        }
+    }
+    .portfolio-items {
+        position: relative;
+        @include breakpoint(sm) {
+            [class*="col-"]:nth-child(odd) {
+                clear: both;
+                margin-bottom: 20px;
+            }
+        }
+        @include breakpoint(md) {
+            [class*="col-"]:nth-child(odd) {
+                clear: none;
+                margin-bottom: 0;
+            }
+        }
+        .item {
+            img {
+                margin: {
+                    bottom: 7px;
+                }
+            }
+            p {
+                margin: {
+                    bottom: 3px;
+                }
+                &.used {
+                    font-style: italic;
+                    font-size: 90%;
+                    margin: {
+                        top: 7px;
+                    }
+                }
+            }
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+#values {
+    text-align: center;
+    .value {
+        margin: {
+            bottom: 20px;
+        }
+        .point {
+            font-weight: 600;
+            margin: {
+                bottom: 0px;
+            }
+        }
+    }
+}
+.success {
+    text-align:center;
+    display:none;
+}
+footer {
+    background: #31333b;
+    color: #fff;
+    padding: {
+        top: 30px;
+        bottom: 100px;
+    }
+    h2 {
+        text-align: center;
+        margin: {
+            bottom: 28px;
+        }
+    }
+    .form-group {
+        margin: {
+            bottom: 30px;
+        }
+        input {
+            border-radius: 0;
+            outline: none;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        textarea {
+            border-radius: 0;
+            height: 163px;
+            outline: none;
+            border: none !important;
+            box-shadow: none !important;
+        }
+    }
+}
